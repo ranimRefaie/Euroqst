@@ -1,0 +1,9 @@
+.header-home{
+    background-image: url('../assets/bg-header.png');
+    background-size: cover;
+display: flex;
+flex-direction: column;
+gap: 84px;
+align-items: center;
+}
+

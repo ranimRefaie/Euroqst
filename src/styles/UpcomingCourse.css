@@ -1,0 +1,73 @@
+.veunesSwiper {
+    width: 89%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.veunesSwiper .swiper-slide {
+    display: flex;
+    width: 251px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0.8);
+    position: relative;
+}
+
+.veunesSwiper .swiper-slide-active {
+    transform: scale(1.2);
+    /* زيادة حجم الشريحة النشطة */
+    z-index: 3;
+    /* أعلى z-index للشريحة النشطة */
+}
+
+.veunesSwiper .swiper-slide-next,
+.veunesSwiper .swiper-slide-prev {
+    z-index: 2;
+    /* z-index للكروت المجاورة */
+}
+
+.veunesSwiper .swiper-slide {
+    z-index: 1;
+    /* z-index للكروت الأخرى */
+}
+
+/* ضبط القيم بحيث يكون الفرق 32 بيكسل */
+.veunesSwiper .swiper-slide:nth-child(1) {
+    top: -64px;
+    /* أعلى كرت */
+}
+
+.veunesSwiper .swiper-slide:nth-child(2) {
+    top: -32px;
+    /* الكرت الثاني */
+}
+
+.veunesSwiper .swiper-slide:nth-child(3) {
+    top: 0px;
+    /* الكرت في المنتصف */
+}
+
+.veunesSwiper .swiper-slide:nth-child(4) {
+    top: 32px;
+    /* الكرت الرابع */
+}
+
+.veunesSwiper .swiper-slide:nth-child(5) {
+    top: 64px;
+    /* أدنى كرت */
+}
+
+/* إضافة المزيد من القواعد حسب الحاجة للشرائح الإضافية */
+
+.veunesSwiper .swiper-slide img {
+    width: 100%;
+    height: 319px;
+    border-radius: 8px;
+    transition: border-radius 0.4s ease-in-out;
+}
+
+.veunesSwiper .swiper-slide-active img {
+    border-radius: 8px;
+    /* الحفاظ على الزاوية المدورة للشريحة النشطة */
+}
