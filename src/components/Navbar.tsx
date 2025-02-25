@@ -19,24 +19,19 @@ export const Navbar = () => {
 
   return (
     <div className='flex justify-between w-[94%] mx-auto items-center'>
-      <div className="flex gap-16 items-center">
         <button className='cursor-pointer w-11' onClick={toggleMenu}>
           <Image src={menu} width={45} height={45} alt="" />
         </button>
-        <button className='hidden md:block text-[#F1F1F1] border-2 py-[10px] px-[24px] rounded-[10px] cursor-pointer'>الدورات التدريبية</button>
-      </div>
+      
 
       <Image src={logo} width={367} height={84} alt="logo" className='w-[131px] md:w-[367px]' />
 
-      <div className="hidden md:flex items-center gap-8">
-        <input type="text" placeholder='Search For Your Course' className='w-[250px] border-b-[1px] border-[#ffffff] bg-transparent text-[#ffffff] p-[10px] outline-none rounded-[1px] placeholder:text-[#ffffff] placeholder:text-[19px] placeholder:font-bold' />
-        <Image src={search} width={40} height={40} alt="" />
-      </div>
+      <button className='hidden md:block text-[#F1F1F1] border-2 py-[10px] px-[24px] rounded-[10px] cursor-pointer'>الدورات التدريبية</button>
 
       <button className='block md:hidden text-[#F1F1F1] border-2 py-[4px] px-[8px] rounded-[10px] cursor-pointer'>الدورات التدريبية</button>
       {/* ================================ */}
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full bg-[#293352] p-4 z-20 rounded-[10px] pb-[149px]">
+        <div className="absolute top-0 left-0 w-full bg-[#293352] p-4  rounded-[10px] pb-[149px]">
           <div className='flex justify-between w-[94%] mx-auto items-center'>
             <div className="flex gap-16 items-center">
               <button className='cursor-pointer w-11' onClick={toggleMenu}>
