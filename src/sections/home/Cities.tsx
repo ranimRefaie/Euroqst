@@ -7,9 +7,9 @@ import Link from 'next/link'
 export const Cities = () => {
   return (
     <div>
-      <TitleSection title='DISCOVER ALL CITIES' desc='Innovativeness within the framework of leading strategically as well as managing changes.' />
+      <TitleSection title='DISCOVER ALL CITIES' desc='Innovativeness within the framework of leading strategically as well as managing changes.'  color='#000000'/>
 
-      <div className="hidden md:flex w-[93%] mx-auto gap-4 mt-16 items-center">
+      <div className="hidden md:flex w-[93%] mx-auto gap-4 items-center">
         <CardCities />
         <CardCities />
         <CardCities />
