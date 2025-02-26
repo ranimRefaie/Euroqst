@@ -18,20 +18,20 @@ export const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between w-[94%] mx-auto items-center p-3'>
+    <div className='flex justify-between w-[94%] mx-auto items-center p-1'>
         <button className='cursor-pointer w-[50px]' onClick={toggleMenu}>
           <Image src={menu} width={45} height={45} alt="" className='w-[50px]' />
         </button>
       
 
-      <Image src={logo} width={367} height={84} alt="logo" className='w-[131px] md:w-[367px]' />
+      <Image src={logo} width={367} height={84} alt="logo" className='w-[131px] md:w-[28%]' />
 
       <button className='hidden md:block text-[#F1F1F1] border-2 py-[10px] px-[24px] rounded-[10px] cursor-pointer text-[20px] font-normal leading-5'>الدورات التدريبية</button>
 
       <button className='block md:hidden text-[#F1F1F1] border-2 py-[4px] px-[8px] rounded-[10px] cursor-pointer'>الدورات التدريبية</button>
 
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full bg-[#293352] p-4  rounded-[10px] pb-[149px]">
+        <div className="absolute top-0 left-0 w-full bg-[#293352] p-4  rounded-[10px] pb-[149px]" style={{zIndex:10}}>
           <div className='flex justify-between w-[94%] mx-auto items-center'>
             <div className="flex gap-16 items-center">
               <button className='cursor-pointer w-11' onClick={toggleMenu}>
