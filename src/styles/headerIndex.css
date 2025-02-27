@@ -16,10 +16,13 @@ align-items: center;
     background: linear-gradient(rgba(19, 78, 136, 0.6),rgba(75, 75, 75, .5));
     top: 0;
     left: 0;
-    z-index: 1;
+z-index: 1;
 }
 
-.main-header
- ,.hero-down{
-    z-index: 2 ;
+
+.hero-down{
+    z-index: 1;
+}
+.main-header{
+    z-index: 2;
 }
