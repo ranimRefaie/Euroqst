@@ -27,7 +27,7 @@ const TableHeader: React.FC<TableHeaderProps> = ({ icon, title }) => (
 );
 
 const TableRow: React.FC<TableRowProps> = ({ city, startDate, endDate, price }) => (
-  <tr className="px-3 md:py-2 md:pl-12 md:pr-7  flex justify-between items-center border-b border-gray-200 mb-2" style={{ boxShadow: '0px 2px 3px 0px rgba(0, 0, 0, 0.3)' }}>
+  <tr className="bg-white px-3 md:py-2 md:pl-12 md:pr-7  flex justify-between items-center border-b border-gray-200 mb-2 rounded-lg" style={{ boxShadow: '0px 2px 3px 0px rgba(0, 0, 0, 0.3)' }}>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{city}</td>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{startDate}</td>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{endDate}</td>
@@ -56,13 +56,19 @@ export const TableInfo = () => {
     { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
     { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
     { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
+    { city: 'London', startDate: '19 Jun 2023', endDate: '19 Jun 2023', price: '4,500 $' },
   ];
 
   return (
-   <div className="">
-     <table className="w-full mb-4">
+   <div className="w-[87%] relative" style={{zIndex:'2'}}>
+     <table className="w-full mb-4 ">
       <thead>
-        <tr className="px-3 md:py-2 md:pl-12 md:pr-7 flex justify-between items-center border-b border-gray-200 mb-2" style={{ boxShadow: '0px 0px 4px 0px rgba(117, 74, 201, 0.25)'
+        <tr className="bg-white px-3 md:py-2 md:pl-12 md:pr-7 flex justify-between items-center border-b border-gray-200 mb-2 rounded-lg " style={{ boxShadow: '0px 0px 4px 0px rgba(117, 74, 201, 0.25)'
  }}>
           {[
             { icon: city, title: "City" },
