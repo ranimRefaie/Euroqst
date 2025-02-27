@@ -6,8 +6,8 @@ interface CardProps {
   text: string; 
 }
 const Card: React.FC<CardProps> = ({  text }) => (
-  <div className={`w-[100%] flex md:w-[100%] justify-between items-center py-6 px-4 rounded-2xl bg-[#293352] text-[#FFFFFF]`}>
-      <p className="text-[16px] font-normal leading-[20.11px]">{text}</p>
+  <div className={`w-[90%] flex md:w-[100%] justify-between items-center py-6 px-4 rounded-2xl bg-[#293352] text-[#FFFFFF]`}>
+      <p className="text-[12px]  md:text-[16px] font-normal leading-[20.11px]">{text}</p>
       <LucideChevronRight size={14} />
   </div>
 );

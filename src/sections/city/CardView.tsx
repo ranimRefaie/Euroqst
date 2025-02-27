@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({ image, text,title }) => (
 
 export const CardView = () => {
   return (
-         <div className=" flex justify-between flex-wrap  mt-8 mb-20">
+         <div className="w-[96%] mx-auto flex justify-between flex-wrap  mt-8 mb-20">
         {cardsData.map((card, index) => (
           <Card key={index} image={card.image} text={card.text} title={card.title} />
         ))}
