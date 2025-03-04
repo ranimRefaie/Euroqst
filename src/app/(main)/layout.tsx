@@ -1,7 +1,8 @@
 // src/app/layout.tsx
-import { Footer } from "@/components/Footer";
-import "./globals.css";
+
+
 import { ReactNode } from "react";
+import { Header } from "@/components/Header";
 interface RootLayoutProps{
   children: ReactNode
 }
@@ -11,12 +12,12 @@ export const metadata = {
   description: "",
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function MainLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
+        <Header/>
         {children}
-        <Footer />
       </body>
     </html>
   );

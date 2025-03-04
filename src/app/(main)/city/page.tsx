@@ -1,21 +1,17 @@
 "use client";
 import { useState } from "react";
-import { Header } from "@/components/Header";
-import { CardView } from "@/sections/cities/CardView";
-import {ListView}  from "@/sections/cities/ListView";
+import { CardView } from "@/sections/city/CardView";
+import { ListView } from "@/sections/city/ListView";
 import Link from "next/link";
 import { MdOutlineGridView } from "react-icons/md";
 import { IoIosMenu } from "react-icons/io";
 import { FaArrowLeft } from "react-icons/fa";
 
 
-
-
-const Cities: React.FC = () => {
+const City: React.FC = () => {
   const [view, setView] = useState<'card' | 'list'>('card');
   return (
       <div>
-          <Header />
           <div className=" w-[89%] mx-auto  mt-8">
               <div className="flex justify-between items-center mb-8">
                   <Link href='' className=" flex gap-2 items-center text-4xl font-black leading-[57.24px] text-[#293352]"><FaArrowLeft/> DISCOVER CITIES </Link>
@@ -37,7 +33,8 @@ const Cities: React.FC = () => {
                   </div>
               </div>
               <p className="text-[20px] font-normal leading-[25.14px] text-[#000000]">
-              Discover the vibrant cities where we offer our top-tier training courses, meticulously designed to meet the evolving demands of the modern workforce.                </p>
+              Embark on a comprehensive and enriching learning journey with our diverse array of training course categories.
+              </p>
           </div>
           <div className="w-[88%] mx-auto">
               {view === 'card' && <CardView />}
@@ -47,5 +44,6 @@ const Cities: React.FC = () => {
       </div>
   );
 };
+export default City;
 
-export default Cities;
+

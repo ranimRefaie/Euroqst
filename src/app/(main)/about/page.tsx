@@ -1,8 +1,8 @@
-import { Header } from "@/components/Header";
-import about_1 from '../../assets/Vision-About.png'
+
+import about_1 from '../../../assets/Vision-About.png'
 import Image, { StaticImageData } from "next/image";
-import about_2 from '../../assets/about-goal.jpg'
-import about_3 from '../../assets/about-trainers.jpg'
+import about_2 from '../../../assets/about-goal.jpg'
+import about_3 from '../../../assets/about-trainers.jpg'
 
 interface SectionProps {
     title: string;
@@ -31,7 +31,6 @@ const About: React.FC = () => {
     ];
     return (
         <div>
-            <Header />
 
             <div className=" w-[89%] mx-auto  mt-16 text-center">
                 <h3 className="text-[40px] font-black leading-[57.24px] text-[#293352] pt-10 tracking-[-0.67px]">About EURO QUEST</h3>

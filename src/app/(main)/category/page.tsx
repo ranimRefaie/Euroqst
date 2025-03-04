@@ -1,21 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { Header } from "@/components/Header";
 import Link from "next/link";
-import { CardView } from "@/sections/categories/CardView";
+import { CardView } from "@/sections/category/CardView";
 // import { SecCards } from "@/sections/Course/SecCards";
-import { ListView } from "@/sections/categories/ListView";
+import { ListView } from "@/sections/category/ListView";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdOutlineGridView } from "react-icons/md";
 import { IoIosMenu } from "react-icons/io";
 
-const Categories: React.FC = () => {
+const Category: React.FC = () => {
     const [view, setView] = useState<'card' | 'list'>('card');
 
     return (
         <div>
-            <Header />
 
             <div className=" w-[89%] mx-auto  mt-8">
                 <div className="flex justify-between items-center mb-8">
@@ -56,4 +54,4 @@ const Categories: React.FC = () => {
     );
 };
 
-export default Categories;
+export default Category;

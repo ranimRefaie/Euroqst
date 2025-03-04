@@ -1,6 +1,6 @@
-import { Header } from '@/components/Header';
+
 import Image from 'next/image';
-import check from '../../assets/icons/Check_ring.svg'
+import check from '../../../assets/icons/Check_ring.svg'
 import Link from 'next/link';
 import '@/styles/coursePage.css'
 
@@ -9,7 +9,7 @@ import { TableInfo } from '@/sections/Course/TableInfo';
 import { SecCards } from '@/sections/Course/SecCards';
 import { CourseModules } from '@/sections/Course/CourseModules';
 import { IoCloseOutline } from 'react-icons/io5';
-import { Navbar } from '@/components/Navbar';
+
 
 interface BtnDateProps {
   title: string;
@@ -38,32 +38,6 @@ const Courses: React.FC = () => {
 
   return (
     <div>
-      <div className="hidden md:block">
-        <Header />
-      </div>
-
-
-
-      <div className=" relative block hero-course md:hidden">
-        <div className="relative z-10 ">
-          <div className="bg-[#293352] py-[10px]">
-            <Navbar />
-          </div>
-          <div className="w-[92.5%] mx-auto text-[#FFFFFF] mt-6">
-            <p className='text-[16px] font-normal'>Administration and Secretaries - Management & Leadership</p>
-            <h1 className='text-[36px] leading-[45.25px] md:text-[40px] font-normal mt-2'>Effective Office Management</h1>
-            <p className='w-auto md:w-[888px] text-[14px] md:text-[16px] font-normal leading-[20.11px] mt-4'>
-              Effective office management plays a crucial role in enhancing organizational efficiency and productivity. It
-              encompasses planning, organizing, and coordinating various administrative activities to ensure a smooth workflow and a positive work environment. This course aims to equip participants with essential knowledge and skills for managing offices effectively, ultimately leading to improved team performance and
-              <br /> communication.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-
-
      <div className="relative">
      <div className="container-table py-[54px] flex flex-col items-center justify-center border-b-[1.5px] border-[#293352] pb-4 bg-slate-400">
        <div className="w-[87%] bg-white px-3 md:py-[14px] md:pl-8 md:pr-7 flex gap-5 items-center border-b border-gray-200 mb-[19px] rounded-lg relative"

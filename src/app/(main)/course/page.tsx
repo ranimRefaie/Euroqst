@@ -1,6 +1,6 @@
-import { Header } from '@/components/Header';
+
 import Image from 'next/image';
-import check from '../../assets/icons/Check_ring.svg'
+import check from '../../../assets/icons/Check_ring.svg'
 import Link from 'next/link';
 import '@/styles/coursePage.css'
 
@@ -9,7 +9,6 @@ import { TableInfo } from '@/sections/Course/TableInfo';
 import { SecCards } from '@/sections/Course/SecCards';
 import { CourseModules } from '@/sections/Course/CourseModules';
 import { IoCloseOutline } from 'react-icons/io5';
-import { Navbar } from '@/components/Navbar';
 
 const Course: React.FC = () => {
 
@@ -36,12 +35,12 @@ const Course: React.FC = () => {
   return (
     <div>
       <div className="hidden md:block">
-        <Header />
+       
       </div>
 
 
 
-      <div className=" relative block hero-course md:hidden">
+      {/* <div className=" relative block hero-course md:hidden">
         <div className="relative z-10 ">
           <div className="bg-[#293352] py-[10px]">
             <Navbar />
@@ -56,7 +55,7 @@ const Course: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 

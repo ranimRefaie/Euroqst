@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Header } from "@/components/Header";
 import Link from "next/link";
-import icon_1 from '../../assets/icons/contact-email.png'
-import icon_2 from '../../assets/icons/mobile_duotone.png'
-import icon_3 from '../../assets/icons/Phone_light.png'
+import icon_1 from '../../../assets/icons/contact-email.png'
+import icon_2 from '../../../assets/icons/mobile_duotone.png'
+import icon_3 from '../../../assets/icons/Phone_light.png'
 import Image, { StaticImageData } from "next/image";
-import report from '../../assets/recaptcha.png'
+import report from '../../../assets/recaptcha.png'
 const InputField: React.FC<{ label: string; type: string; placeholder?: string }> = ({ label, type, placeholder }) => (
     <div className="w-full flex flex-col md:w-[42%]">
         <label className="text-xs font-normal leading-5 text-[#293352]">{label}</label>
@@ -36,7 +35,6 @@ const Contactus: React.FC = () => {
 
     return (
         <div>
-            <Header />
             <div className="w-[89%] mx-auto mt-12 mb-5">
                 <h3 className="text-[40px] font-black leading-[72px] text-[#293352]">Contact us</h3>
                 <div className="flex-col-reverse md:flex-row flex justify-between">
