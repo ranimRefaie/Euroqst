@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({  text }) => (
 
 export const ListView = () => {
   const items = [
-    { text: "Petroleum Laboratory Management: Mini-Master in Oil and Gas Processes",  },
+    { text: "Purchasing and Logistics and Inventory Management Courses",  },
     { text: "Purchasing and Logistics and Inventory Management Courses", },
     { text: "Purchasing and Logistics and Inventory Management Courses",  },
     { text: "Purchasing and Logistics and Inventory Management Courses", },

@@ -7,6 +7,7 @@ import c5 from '../../assets/card-course-5.jpg';
 import { MdOutlineDateRange } from 'react-icons/md';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { WiTime3 } from 'react-icons/wi';
+import Link from 'next/link';
 
 interface dataCards {
   title: string; 
@@ -31,7 +32,7 @@ interface courseCards {
   return (
     <div className="w-[91%] mx-auto mt-10 mb-16">
       <h3 className='text-[36px] font-black leading-[68px] text-[#080808]'>{title}</h3>
-      <div className="flex gap-[16.94px] flex-wrap md:flex-nowrap">
+      <div className="flex gap-[16.94px] flex-wrap md:flex-nowrap justify-center">
         {courses.map((course, index) => (
           <CourseCard key={index} {...course} />
         ))}
@@ -40,7 +41,7 @@ interface courseCards {
   );
 };
   const CourseCard  : React.FC<courseCards> = ( { image, title, startDate, endDate, location, duration } ) => (
-  <div className="w-[44%] h-[139px] md:w-[20%] md:h-[320px] relative">
+  <Link href='/course' className="w-[140px] h-[139px] md:w-[251px] md:h-[320px] relative">
     <Image src={image} alt='' className='rounded-3xl w-full h-full' width={250} height={319} />
     <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,32,40,0.59)] to-[rgba(255,255,255,0.236)] rounded-3xl"></div>
     <div className="text-center absolute bottom-3 md:bottom-10 z-10">
@@ -75,5 +76,5 @@ interface courseCards {
         )}
       </div>
     </div>
-  </div>
+  </Link>
 );

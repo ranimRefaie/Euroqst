@@ -28,7 +28,7 @@ const TableHeader: React.FC<TableHeaderProps> = ({ icon, title }) => (
 
 const TableRow: React.FC<TableRowProps> = ({ city, startDate, endDate, price }) => (
   <tr className="bg-white px-3 md:py-2 md:pl-12 md:pr-7  flex justify-between items-center border-b border-gray-200 mb-2 rounded-lg" style={{ boxShadow: '0px 2px 3px 0px rgba(0, 0, 0, 0.3)' }}>
-    <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{city}</td>
+    <td className=" text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{city}</td>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{startDate}</td>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{endDate}</td>
     <td className="text-[6px] leading-[7.54px]  md:text-[14px] font-normal md:leading-7 text-[#313131] text-center">{price}</td>

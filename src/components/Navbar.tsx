@@ -53,13 +53,17 @@ export const Navbar = () => {
           <div className="flex-col md:flex-row flex gap-0 md:gap-10 border-t border-[#FFFFFF] pt-[50px] mt-4">
             <ul className='flex flex-col gap-4'>
               <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/'>Home Page</Link></li>
-              <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/category'>CATEGORIES</Link></li>
+              <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/categories'>CATEGORIES</Link></li>
               <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/contact'>CONTACT US</Link></li>
             </ul>
             <ul className='flex flex-col gap-4'>
               <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/about'>ABOUT</Link></li>
-              <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/city'>CITIES</Link></li>
+              <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/cities'>CITIES</Link></li>
               <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/blogs'>BLOGS</Link></li>
+            </ul>
+            <ul className='flex flex-col gap-4'>
+              <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/courses'>Courses</Link></li>
+
             </ul>
           </div>
         </div>
