@@ -8,7 +8,7 @@ import download from '../../assets/icons/download.svg';
 import register_light from '../../assets/icons/register-light.svg';
 
 interface TableHeaderProps {
-  title: string; 
+  title: string;
   icon: StaticImageData;
 }
 
@@ -16,12 +16,12 @@ interface TableRowProps {
   city: string;
   startDate: string;
   endDate: string;
-  price: string; 
+  price: string;
 }
 
 const TableHeader: React.FC<TableHeaderProps> = ({ icon, title }) => (
   <th className="py-2 flex items-center md:text-[12px] text-[8px] font-normal leading-6 text-[#313131]">
-    <Image src={icon} alt="" width={20} height={20} className='hidden md:block'/>
+    <Image src={icon} alt="" width={20} height={20} className='hidden md:block' />
     {title}
   </th>
 );
@@ -39,12 +39,12 @@ const TableRow: React.FC<TableRowProps> = ({ city, startDate, endDate, price }) 
     </td>
     <td className="text-center">
       <Link href='' className="border border-[#293352] px-[2px] py-1 md:px-2 text-[#293352] rounded-lg text-[10px] md:text-[14px] font-bold  leading-[12.57px] md:leading-[28.6px] flex items-center gap-[3.5px]">
-        <Image src={help} alt='' width={24} height={24} className='w-[16px] h-[16px] hidden md:block'/>Inquire
+        <Image src={help} alt='' width={24} height={24} className='w-[16px] h-[16px] hidden md:block' />Inquire
       </Link>
     </td>
     <td className="text-center">
       <Link href='' className="text-[10px] md:text-[14px] font-normal leading-[12.57px] md:leading-[24.52px] text-[#313131] px-[2px] py-1 md:px-2 flex items-center gap-[3.5px]">
-        <Image src={download} alt='' width={22} height={22} className='w-[16px] h-[16px] hidden md:block'/>Download/Print
+        <Image src={download} alt='' width={22} height={22} className='w-[16px] h-[16px] hidden md:block' />Download/Print
       </Link>
     </td>
   </tr>
@@ -65,30 +65,31 @@ export const TableInfo = () => {
   ];
 
   return (
-   <div className="w-[87%] relative" style={{zIndex:'2'}}>
-     <table className="w-full mb-4 ">
-      <thead>
-        <tr className="bg-white px-3 md:py-2 md:pl-12 md:pr-7 flex justify-between items-center border-b border-gray-200 mb-2 rounded-lg " style={{ boxShadow: '0px 0px 4px 0px rgba(117, 74, 201, 0.25)'
- }}>
-          {[
-            { icon: city, title: "City" },
-            { icon: calendar, title: "Start Date" },
-            { icon: calendar, title: "End Date" },
-            { icon: calendar, title: "Price" },
-            { icon: register, title: "Register" },
-            { icon: help, title: "Inquire" },
-            { icon: download, title: "Download/Print" }
-          ].map(({ icon, title }, index) => (
-            <TableHeader key={index} icon={icon} title={title} />
-          ))}
-        </tr>
+    <div className="w-[87%] relative" style={{ zIndex: '2' }}>
+      <table className="w-full mb-4 ">
+        <thead>
+          <tr className="bg-white px-3 md:py-2 md:pl-12 md:pr-7 flex justify-between items-center border-b border-gray-200 mb-2 rounded-lg " style={{
+            boxShadow: '0px 0px 4px 0px rgba(117, 74, 201, 0.25)'
+          }}>
+            {[
+              { icon: city, title: "City" },
+              { icon: calendar, title: "Start Date" },
+              { icon: calendar, title: "End Date" },
+              { icon: calendar, title: "Price" },
+              { icon: register, title: "Register" },
+              { icon: help, title: "Inquire" },
+              { icon: download, title: "Download/Print" }
+            ].map(({ icon, title }, index) => (
+              <TableHeader key={index} icon={icon} title={title} />
+            ))}
+          </tr>
         </thead>
-      <tbody>
-        {data.map((item, index) => (
-          <TableRow key={index} {...item} />
-        ))}
-      </tbody>
-    </table>
-   </div>
+        <tbody>
+          {data.map((item, index) => (
+            <TableRow key={index} {...item} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };

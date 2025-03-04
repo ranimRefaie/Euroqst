@@ -13,10 +13,10 @@ export const About = () => {
         <div className="about-description w-full md:w-[48%]">
           <h1 className="text-[20px] leading-[20.11px] md:text-[48px] md:leading-[72px] font-normal text-[#293352]"> EUROQUEST</h1>
           <p className="text-xs leading-[15.08px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] my-6 capitalize ">
-          Balanced Score Training Center is an international training institute that seeks to enhance organizational performance and professional skills through its structured programs across different organizational levels. Our aim is to help organizations and people with creative training and consulting solutions that combine theoretical knowledge with practical application, with a view to achieving effective and lasting outcomes          </p>
+            Balanced Score Training Center is an international training institute that seeks to enhance organizational performance and professional skills through its structured programs across different organizational levels. Our aim is to help organizations and people with creative training and consulting solutions that combine theoretical knowledge with practical application, with a view to achieving effective and lasting outcomes          </p>
           <button className="text-[14px] leading-5 font-normal text-center px-6 py-[10px] rounded-[10px] cursor-pointer border-none bg-[#293352] text-[#ffffff]">
-        Explore more
-        </button>
+            Explore more
+          </button>
         </div>
       </div>
     </section>

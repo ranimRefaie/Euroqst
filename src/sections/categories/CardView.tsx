@@ -1,17 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import c1 from '../../assets/city-1.jpg';
 import Link from 'next/link';
-// import c1 from '../../assets/category/cat-1.jpg';
-// import c2 from '../../assets/category/cat-2.jpg';
-// import c3 from '../../assets/category/cat-3.jpg';
-// import c4 from '../../assets/category/cat-4.jpg';
-// import c5 from '../../assets/category/cat-5.jpg';
-// import c6 from '../../assets/category/cat-6.jpg';
-// import c7 from '../../assets/category/cat-7.jpg';
-// import c8 from '../../assets/category/cat-8.jpg';
-// import c9 from '../../assets/category/cat-9.jpg';
-// import c10 from '../../assets/category/cat-10.jpg';
-// import c11 from '../../assets/category/cat-11.jpg';
 
 interface CardProps {
   image: StaticImageData; 
@@ -34,16 +23,6 @@ const cardsData = [
   { image: c1, text: 'Human Resource, Personnel, and Training' },
   { image: c1, text: 'Human Resource, Personnel, and Training' },
   { image: c1, text: 'Human Resource, Personnel, and Training' },
-  // { image: c2, text: 'Management &amp; Leadership' },
-  // { image: c3, text: 'Project, Contract, Procurement' },
-  // { image: c4, text: 'Health, Safety &amp; Security' },
-  // { image: c5, text: 'Administration and Secretaries' },
-  // { image: c6, text: 'Finance and Accounting' },
-  // { image: c7, text: 'PR &amp; Customer Service' },
-  // { image: c8, text: 'Information Technology' },
-  // { image: c9, text: 'Engineering, Oil and Gas' },
-  // { image: c10, text: 'Water Engineering and Management' },
-  // { image: c11, text: 'Information Technology Courses and Social Networks' },
 ];
 
 const Card: React.FC<CardProps> = ({ image, text }) => (

@@ -10,17 +10,17 @@ import { WiTime3 } from 'react-icons/wi';
 import Link from 'next/link';
 
 interface dataCards {
-  title: string; 
+  title: string;
 }
 interface courseCards {
- image:StaticImageData;
- title:string;
- startDate:string;
- endDate:string;
- location:string;
-  duration:string
+  image: StaticImageData;
+  title: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  duration: string
 }
-  export const SecCards  : React.FC<dataCards> = ({ title }) =>  {
+export const SecCards: React.FC<dataCards> = ({ title }) => {
   const courses = [
     { image: c1, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
     { image: c2, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
@@ -40,7 +40,7 @@ interface courseCards {
     </div>
   );
 };
-  const CourseCard  : React.FC<courseCards> = ( { image, title, startDate, endDate, location, duration } ) => (
+const CourseCard: React.FC<courseCards> = ({ image, title, startDate, endDate, location, duration }) => (
   <Link href='/course' className="w-[140px] h-[139px] md:w-[251px] md:h-[320px] relative">
     <Image src={image} alt='' className='rounded-3xl w-full h-full' width={250} height={319} />
     <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,32,40,0.59)] to-[rgba(255,255,255,0.236)] rounded-3xl"></div>

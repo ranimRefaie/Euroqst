@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react'
-// import { SlArrowRight } from 'react-icons/sl';
 interface CardProps {
   city: string;
 }

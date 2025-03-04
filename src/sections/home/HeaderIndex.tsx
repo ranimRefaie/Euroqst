@@ -24,16 +24,16 @@ export const HeaderIndex = () => {
             <Link href='/city' className='text-[#FFFFFF] text-[18px] leading-[57.24px] font-normal w-[287px] h-[47px] flex justify-center items-center  bg-[#293352] rounded-sm'>DISCOVER ALL CITIES</Link>
           </div>
         </div>
-       
+
       </div>
       <div className="hidden hero-down absolute top-[92%] px-[44.49px] mx-auto bg-[#293352] rounded-[100px] md:flex  gap-8 justify-between py-[22px]">
-      <button className='mb-[43px] w-[100%] px-4 py-3 md:px-[22px] md:py-[10.5px] rounded-[20px] bg-[#FFFFFF0A] md:bg-transparent md:w-auto md:mb-0  text-[#ffffff] border border-[#FFFFFF]  cursor-pointer text-[14px] font-medium flex items-center justify-center'>Enter Keyword</button>
-          {[ "Select Category", "Select Date", 'Select Venue', 'Select Duration'].map((label, index) => (
-            <DropdownButton key={index} label={label} />
-          ))}
-          <button className='text-[14px] font-medium leading-5 text-[#293352] bg-[#AFBFD3] rounded-[20px] border border-[#00000080] py-[10px] px-10'>Search</button>
-        </div>
-      
+        <button className='mb-[43px] w-[100%] px-4 py-3 md:px-[22px] md:py-[10.5px] rounded-[20px] bg-[#FFFFFF0A] md:bg-transparent md:w-auto md:mb-0  text-[#ffffff] border border-[#FFFFFF]  cursor-pointer text-[14px] font-medium flex items-center justify-center'>Enter Keyword</button>
+        {["Select Category", "Select Date", 'Select Venue', 'Select Duration'].map((label, index) => (
+          <DropdownButton key={index} label={label} />
+        ))}
+        <button className='text-[14px] font-medium leading-5 text-[#293352] bg-[#AFBFD3] rounded-[20px] border border-[#00000080] py-[10px] px-10'>Search</button>
+      </div>
+
     </div>
   )
 }
