@@ -8,20 +8,34 @@ import x from '@/assets/icons/x.svg'
 import facebook from '@/assets/icons/facebook.svg'
 import instagram from '@/assets/icons/instagram.svg'
 import location from '@/assets/icons/location.svg'
+import Link from "next/link"
+interface ListItem {
+    label: string;
+    link: string;
+}
 interface ListProps {
-    items: string[];
+    items: ListItem[];
 }
 
 export const Footer = () => {
 
     const quickAccessItems = [
-        "Home", "Cities", "Categories", "About", "Blogs", "Sitemap", "Join our Team"
+        { label: "Home", link: "/" },
+        { label: "Cities", link: "/cities" },
+        { label: "Categories", link: "/categories" },
+        { label: "About", link: "/about" },
+        { label: "Blogs", link: "/blogs" },
+        { label: "Sitemap", link: "/sitemap" },
+        { label: "Join our Team", link: "/join-our-team" }
     ];
     const userTermsItems = [
-        "Terms & Condition", "Privacy Policy", "Contact Us"
+        { label: "Terms & Condition", link: "/terms" },
+        { label: "Privacy Policy", link: "/privacy" },
+        { label: "Contact Us", link: "/contact" },
     ];
     const language = [
-        "English", "Arabic",
+        { label: "English", link: "/" },
+        { label: "Arabic", link: "/" },
     ];
     const socialLinks = [
         { src: linkedIn, alt: 'linkedIn' },
@@ -36,7 +50,17 @@ export const Footer = () => {
     { src: phone, text: '+971 4 432 2444' },
     ]
 
-    const categories = ['Designing', 'Programming', 'Graphics', 'Front End', 'Composition', 'Tailoring', 'Database', 'Sport', 'Cooking']
+    const categories = [
+        { label: "Designing", link: "/" },
+        { label: "Programming", link: "/" },
+        { label: "Graphics", link: "/" },
+        { label: "Front End", link: "/" },
+        { label: "Composition", link: "/" },
+        { label: "Tailoring", link: "/" },
+        { label: "Database", link: "/" },
+        { label: "Sport", link: "/" },
+        { label: "Cooking", link: "/" },
+        ]
     return (
         <footer className="bg-[#293352] text-[#ffffff] py-12">
             <div className="flex-col-reverse md:flex-row w-[92.5%] md:w-[89%] mx-auto flex justify-between px-5">
@@ -87,10 +111,13 @@ export const Footer = () => {
 const List: React.FC<ListProps> = ({ items }) => (
     <ul className="flex flex-col gap-4 p-0 list-none">
         {items.map((item, index) => (
-            <li key={index} className="ml-3">{item}</li>
+            <li key={index} className="ml-3">
+                <Link href={item.link} className="text-[13px] leading-[15.23px] font-medium text-[#FFFFFF]">{item.label}</Link>
+            </li>
         ))}
     </ul>
 );
+
 
 const SocialLinks: React.FC<{ links: { src: string; alt: string }[] }> = ({ links }) => (
     <div className="flex gap-8">

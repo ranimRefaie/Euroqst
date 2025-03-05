@@ -3,6 +3,7 @@
 
 import { ReactNode } from "react";
 import { Header } from "@/components/Header";
+
 interface RootLayoutProps{
   children: ReactNode
 }
@@ -18,6 +19,7 @@ export default function MainLayout({ children }: RootLayoutProps) {
       <body>
         <Header/>
         {children}
+
       </body>
     </html>
   );
