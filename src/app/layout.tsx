@@ -1,9 +1,9 @@
 // src/app/layout.tsx
-import { Footer } from "@/components/Footer";
+
 import "./globals.css";
 import { ReactNode } from "react";
-interface RootLayoutProps{
-  children: ReactNode
+interface RootLayoutProps {
+  children: ReactNode;
 }
 
 export const metadata = {
@@ -13,11 +13,11 @@ export const metadata = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-        <Footer />
-      </body>
-    </html>
+      <html lang="en">
+          <body>
+              {children}
+
+          </body>
+      </html>
   );
 }

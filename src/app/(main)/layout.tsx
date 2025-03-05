@@ -4,23 +4,20 @@
 import { ReactNode } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-interface RootLayoutProps{
-  children: ReactNode
+
+
+interface MainLayoutProps {
+  children: ReactNode;
 }
 
-export const metadata = {
-  title: "Euroqst",
-  description: "",
-};
-
-export default function MainLayout({ children }: RootLayoutProps) {
+export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <html lang="en">
-      <body>
-        <Header/>
-        {children}
-        <Footer/>
-      </body>
-    </html>
+      <html lang="en">
+          <body>
+              <Header />
+              {children} 
+              <Footer/>
+          </body>
+      </html>
   );
 }
