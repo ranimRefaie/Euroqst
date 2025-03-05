@@ -3,7 +3,7 @@
 
 import { ReactNode } from "react";
 import { Header } from "@/components/Header";
-
+import { Footer } from "@/components/Footer";
 interface RootLayoutProps{
   children: ReactNode
 }
@@ -19,7 +19,7 @@ export default function MainLayout({ children }: RootLayoutProps) {
       <body>
         <Header/>
         {children}
-
+        <Footer/>
       </body>
     </html>
   );
