@@ -34,7 +34,8 @@
       .mobile-course-view{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 8px;
       }
       .card-course img{
         width: 140px !important;
