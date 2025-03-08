@@ -28,16 +28,18 @@ export const UpcomingCourse = () => {
     { image: c3, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
     { image: c4, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
     { image: c5, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
+    { image: c1, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
+    { image: c2, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
+    { image: c3, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
+    { image: c4, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
+    { image: c5, title: "Python for Beginners - Learn Programming from scratch", startDate: "23-2-2025", endDate: "23-2-2025", location: "LONDON", duration: "11 Weeks longs" },
 
   ];
   return (
     <div className="">
       <TitleSection title='UPCOMING COURSES' desc='Innovativeness within the framework of leading strategically as well as managing changes.' color='#000000' />
-      
-      {/* حاوية للكروت */}
-      <div className="course-container">
-        {/* استخدام Swiper للشاشات الكبيرة */}
 
+      <div className="course-container w-full">
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -48,15 +50,15 @@ export const UpcomingCourse = () => {
             autoplay={{ delay: 6000, disableOnInteraction: false }}
             breakpoints={{
               0: { // For screens <= 714px
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 5,
               },
               721: { // For screens >= 721px
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 10,
               },
               913: { // For screens >= 913px
-                slidesPerView: 4,
+                slidesPerView: 5,
                 spaceBetween: 10,
               },
             }} 
@@ -78,7 +80,7 @@ export const UpcomingCourse = () => {
           </Swiper>
 
 
-        {/* عرض الكروت بدون Swiper للشاشات الصغيرة */}
+
         <div className="mobile-course-view">
           {courses.map((course, index) => (
             <div key={index} className="course-card-mobile">

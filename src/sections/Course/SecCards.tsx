@@ -44,7 +44,7 @@ export const SecCards: React.FC<dataCards> = ({ title }) => {
 export const CourseCard: React.FC<courseCards> = ({ image, title, startDate, endDate, location, duration }) => (
   <Link href='/course' className="w-[140px] h-[139px] md:w-[251px] md:h-[320px] relative card-course">
     <Image src={image} alt='' className='rounded-3xl w-full h-full  border border-[#ffffff]' width={250} height={319} />
-    <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,32,40,0.59)] to-[rgba(255,255,255,0.236)] rounded-3xl"></div>
+    <div className="absolute left-0 top-0 w-[140px] h-[139px] md:w-[251px] md:h-[320px] bg-gradient-to-b from-[rgba(26,32,40,0.59)] to-[rgba(255,255,255,0.236)] rounded-3xl"></div>
     <div className="text-center absolute bottom-6 md:bottom-10 z-10">
       <div className="w-[90%] mx-auto pb-4 border-b-[0.55px] border-dashed border-[#FFFFFF]">
         <p className="text-[11.24px] font-bold text-[#FEFEFE] leading-[14.13px]">{title}</p>

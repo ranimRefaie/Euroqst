@@ -12,8 +12,14 @@
     transform: scale(1.2);
     z-index: 2;
   }
+  .card-course img{
+    width: 251px !important;
+    height: 319px;
+    border: 1.5px solid #ffffff;
+
+  }
   .swiper-courses .swiper-slide-active img{
-    border: 1px solid #000000;
+    border: 2px solid #000000;
   }
 
   .swiper-courses{
@@ -25,6 +31,7 @@
     width: 90.3%;
     margin: auto;
   }
+
 
   @media (max-width: 768px) {
     .swiper-courses{
