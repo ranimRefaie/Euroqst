@@ -60,7 +60,6 @@ export const Navbar = () => {
                   <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/blogs'>BLOGS</Link></li>
                 </ul>
                 <ul className='flex flex-col gap-4 mb-4 md:mb-0'>
-                  <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/courses'>Courses</Link></li>
 
                 </ul>
               </div>
