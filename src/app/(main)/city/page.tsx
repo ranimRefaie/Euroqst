@@ -14,7 +14,7 @@ const City: React.FC = () => {
       <div>
           <div className=" w-[89%] mx-auto  mt-8">
               <div className="flex justify-between items-center mb-8">
-                  <Link href='' className=" flex gap-2 items-center text-4xl font-black leading-[57.24px] text-[#293352]"><FaArrowLeft/> DISCOVER CITIES </Link>
+                  <Link href='' className=" flex gap-2 items-center text-4xl font-black leading-[57.24px] text-[#293352]"><FaArrowLeft/>city </Link>
                   <div className="flex">
                       <button
                           onClick={() => setView('card')}
