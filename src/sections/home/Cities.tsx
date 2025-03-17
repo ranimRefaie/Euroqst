@@ -15,7 +15,7 @@ export const Cities = () => {
         <CardCities />
         <CardCities />
         <CardCities />
-        <Link href='' className='flex items-center gap-2'>See All <span className='w-10 h-10 bg-[#AFBFD3] rounded-[50%] flex items-center justify-center'><LucideArrowRight /></span> </Link>
+        <Link href='/cities' className='flex items-center gap-2'>See All <span className='w-10 h-10 bg-[#AFBFD3] rounded-[50%] flex items-center justify-center transition-transform duration-300 hover:scale-105'><LucideArrowRight /></span> </Link>
       </div>
 
         <div className="w-[92.5%] mx-auto flex justify-between flex-wrap md:hidden mt-2">

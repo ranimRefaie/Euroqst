@@ -26,7 +26,7 @@ const cardsData = [
 ];
 
 const Card: React.FC<CardProps> = ({ image, text }) => (
-  <Link href='/category' className="w-[140px] h-[160px] md:w-[31%] md:h-[133px] relative mb-8 ">
+  <Link href='/courses' className="w-[140px] h-[160px] md:w-[31%] md:h-[133px] relative mb-8 transition-transform duration-300 hover:scale-105">
     <div className="w-full h-full absolute top-0 left-0 bg-[#29335299] rounded-[13.94px]"></div>
     <Image src={image} alt='' className='w-full h-full rounded-[13.94px]' width={264} height={337}/>
       <div className="w-[100%] text-center absolute bottom-7">

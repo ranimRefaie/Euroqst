@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({ image, title, desc }) => (
         <Image src={image} width={377} height={100} alt="" className="w-[100%]" />
         <h5 className="text-[20px] leading-7 font-bold text-[#1E1E1E] mt-2">{title}</h5>
         <p className="text-xs leading-[19.6px] text-[#757575]">{desc}</p>
-        <div className="flex justify-end ">                    <Link href='/blog' className="flex py-[2px] px-[40px] rounded-lg items-center gap-[6.5px] bg-[#293352] text-[#FFFFFF] text-[14px] font-bold leading-[28.6px]">Read more <FaArrowRight /></Link>
+        <div className="flex justify-end ">                    <Link href='/blog' className="flex py-[2px] px-[40px] rounded-lg items-center gap-[6.5px] bg-[#293352] text-[#FFFFFF] text-[14px] font-bold leading-[28.6px] transition-transform duration-300 hover:scale-105">Read more <FaArrowRight /></Link>
         </div>
     </div>
 );

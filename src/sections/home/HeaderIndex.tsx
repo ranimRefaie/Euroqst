@@ -20,8 +20,19 @@ export const HeaderIndex = () => {
           <h1 className='text-[40px] md:text-[55px] font-light leading-[57.24px] tracking-[-0.6655414700508118px] text-center text-[#ffffff]'>Professional and Lifelong Learning</h1>
           <p className='text-[20px] md:text-[30px] font-normal leading-[57.24px] tracking-[-0.6655414700508118px] text-center text-[#ffffff] mt-9'>In-House , Classroom , Online Courses</p>
           <div className="flex gap-5 justify-center mt-9 flex-wrap">
-            <Link href='/category' className='text-[#FFFFFF] text-[18px] leading-[57.24px] font-normal w-[287px] h-[47px] flex justify-center items-center  bg-[#293352] rounded-sm'>DISCOVER ALL CATEGORIES</Link>
-            <Link href='/city' className='text-[#FFFFFF] text-[18px] leading-[57.24px] font-normal w-[287px] h-[47px] flex justify-center items-center  bg-[#293352] rounded-sm'>DISCOVER ALL CITIES</Link>
+          <Link 
+  href='/category' 
+  className='text-[#FFFFFF] text-[18px] leading-[57.24px] font-normal w-[287px] h-[47px] flex justify-center items-center bg-[#293352] rounded-sm transition-transform duration-300 hover:scale-105'
+>
+  DISCOVER ALL CATEGORIES
+</Link>
+
+<Link 
+  href='/city' 
+  className='text-[#FFFFFF] text-[18px] leading-[57.24px] font-normal w-[287px] h-[47px] flex justify-center items-center bg-[#293352] rounded-sm transition-transform duration-300 hover:scale-105'
+>
+  DISCOVER ALL CITIES
+</Link>
           </div>
         </div>
 

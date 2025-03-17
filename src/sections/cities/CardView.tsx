@@ -27,7 +27,7 @@ const cardsData = [
 ];
 
 const Card: React.FC<CardProps> = ({ image, text,title }) => (
-    <Link href='/city' className="card-city w-[44%] h-[133px] md:w-[30.3%] md:h-[133px] relative mb-10">
+    <Link href='/courses' className="card-city w-[44%] h-[133px] md:w-[30.3%] md:h-[133px] relative mb-10 transition-transform duration-300 hover:scale-105">
       <Image src={image} alt='' className='w-full h-full rounded-2xl' width={400} height={200}/>
       <div className="main-card-city absolute bottom-0 w-full h-full  rounded-3xl">
     

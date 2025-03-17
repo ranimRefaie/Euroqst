@@ -18,7 +18,7 @@ const InputField: React.FC<{ label: string; type: string; placeholder?: string }
     </div>
 );
 
-const ContactInfoItem : React.FC<{ icon: StaticImageData; title: string; content: string }> =  ({ icon, title, content }) => (
+const ContactInfoItem: React.FC<{ icon: StaticImageData; title: string; content: string }> = ({ icon, title, content }) => (
     <div className="flex items-center px-6 py-4 rounded-2xl gap-2" style={{ boxShadow: '0px 2px 6px 2px rgba(0, 0, 0, 0.15)' }}>
         <span className="w-16 h-16 bg-[#293352] flex items-center justify-center rounded-full text-[#FFFFFF] text-[20px]">
             <Image src={icon} alt="" width={27} height={27} />
@@ -68,12 +68,12 @@ const Contactus: React.FC = () => {
                                     />
                                     <label htmlFor="not-a-robot" className="text-xs text-[#293352]">I&#39;m not a robot</label>
                                 </div>
-                                <Image src={report} width={41} height={41} alt=""/>
+                                <Image src={report} width={41} height={41} alt="" />
                             </div>
 
                             <Link
                                 href=""
-                                className={`flex justify-center items-center bg-[#293352] px-6 py-[10px] text-[14px] text-[#FFFFFF] leading-5 rounded-[10px] ${!isNotRobot ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                className={`flex justify-center items-center bg-[#293352] px-6 py-[10px] text-[14px] text-[#FFFFFF] leading-5 rounded-[10px] ${!isNotRobot ? 'opacity-50 cursor-not-allowed' : ''} transition-transform duration-300 hover:scale-105`}
                                 onClick={(e) => !isNotRobot && e.preventDefault()}
                             >
                                 Send message
@@ -82,9 +82,9 @@ const Contactus: React.FC = () => {
                     </form>
 
                     <div className="flex flex-col gap-4" >
-                    <ContactInfoItem icon={icon_1} title="EMAIL" content="info@euro-quest.org" />
-        <ContactInfoItem icon={icon_2} title="MOBILE" content="+971 50 625 2099" />
-        <ContactInfoItem icon={icon_3} title="PHONE" content="+971 4 432 2444" />
+                        <ContactInfoItem icon={icon_1} title="EMAIL" content="info@euro-quest.org" />
+                        <ContactInfoItem icon={icon_2} title="MOBILE" content="+971 50 625 2099" />
+                        <ContactInfoItem icon={icon_3} title="PHONE" content="+971 4 432 2444" />
 
                     </div>
                 </div>

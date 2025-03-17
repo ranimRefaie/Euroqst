@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from '@/assets/logo.svg'
 import menu from '@/assets/icons/Menu.svg'
 import Image from 'next/image'
@@ -11,18 +11,34 @@ import '@/styles/headerIndex.css'
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 50) { 
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar w-full">
+    <div className={`navbar w-full ${isSticky ? 'fixed top-0 left-0 z-50 bg-[#293352]' : 'bg-transparent'} transition-all duration-300`}>
       <div className='flex justify-between w-[94%] mx-auto items-center p-1'>
         <button className='cursor-pointer w-[50px]' onClick={toggleMenu}>
           <Image src={menu} width={45} height={45} alt="" className='w-[50px]' />
         </button>
-
 
         <Image src={logo} width={367} height={84} alt="logo" className='w-[131px] md:w-[28%]' />
 
@@ -31,13 +47,12 @@ export const Navbar = () => {
         <button className='block md:hidden text-[#F1F1F1] border-2 py-[4px] px-[8px] rounded-[10px] cursor-pointer'>الدورات التدريبية</button>
 
         {isMenuOpen && (
-          <div className="absolute top-0 left-0 w-full bg-[#293352] p-4 rounded-[10px] pb-[149px] z-30" >
+          <div className="absolute top-0 left-0 w-full bg-[#293352] p-4 rounded-[10px] pb-[149px] z-30">
             <div className='flex justify-between w-[94%] mx-auto items-center'>
               <div className="flex gap-16 items-center">
                 <button className='cursor-pointer w-11' onClick={toggleMenu}>
                   <Image src={close} width={45} height={45} alt="" />
                 </button>
-
               </div>
 
               <Image src={logo} width={367} height={84} alt="logo" className='w-[131px] md:w-[28%]' />
@@ -59,9 +74,7 @@ export const Navbar = () => {
                   <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/cities'>CITIES</Link></li>
                   <li className='flex items-center gap-[13px] text-[20px] leading-[57.24px] font-light text-[#FFFFFF]'><IoIosArrowForward /> <Link href='/blogs'>BLOGS</Link></li>
                 </ul>
-                <ul className='flex flex-col gap-4 mb-4 md:mb-0'>
-
-                </ul>
+                <ul className='flex flex-col gap-4 mb-4 md:mb-0'></ul>
               </div>
             </div>
           </div>
